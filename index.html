@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FREIGEIST Blog</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #0070f3;
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f5f5f5;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 1.5em;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3em auto;
+      padding: 0 1.5em;
+    }
+
+    .intro {
+      margin-bottom: 3em;
+    }
+
+    .intro p {
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+    }
+
+    .post-card {
+      border: 1px solid #eee;
+      padding: 1.5em;
+      border-radius: 8px;
+      background: #fafafa;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .post-card a {
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 1.2em;
+    }
+
+    .post-meta {
+      color: #777;
+      font-size: 0.9em;
+      margin-top: 0.3em;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      padding: 4em 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FREIGEIST</h1>
+    <nav>
+      <a href="index.html">Blog</a>
+      <a href="projekt.html">Projekt</a>
+      <a href="about.html">Über mich</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Willkommen beim FREIGEIST-Experiment</h2>
+      <p>Ein Langzeit-Logbuch über Selbstbeobachtung, Kreativität und digitale Identität.</p>
+    </section>
+
+    <section class="grid">
+      <div class="post-card">
+        <a href="post1.html">🌀 Woche 18 – Also sprach FREIGEIST</a>
+        <div class="post-meta">24. Juni 2025 · Selbstreflexion</div>
+      </div>
+      <div class="post-card">
+        <a href="post2.html">💭 Woche 19 – Idee, Licht und Leichtigkeit</a>
+        <div class="post-meta">1. Juli 2025 · Reisen & Denken</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 FREIGEIST · entwickelt im Selbstversuch mit KI und Neugier
+  </footer>
+</body>
+</html>
