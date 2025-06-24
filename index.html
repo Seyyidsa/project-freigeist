@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FREIGEIST Blog</title>
+  <!-- Jersey 25 font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --accent: #0070f3;
-      --font: system-ui, sans-serif;
+      --bg: #e0e0e0;
+      --text: #222;
+      --accent: #0000cc;
+      --border: #000;
+      --font: 'Jersey 25', sans-serif;
     }
 
     body {
@@ -18,120 +21,128 @@
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
+      font-size: 18px;
     }
 
     header {
-      background: #f5f5f5;
+      background: #c0c0c0;
       padding: 1em 2em;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 3px double var(--border);
+      border-top: 3px double var(--border);
+      box-shadow: none;
+      position: static;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.5em;
+      font-size: 2.2em;
       color: var(--accent);
+      letter-spacing: 1px;
     }
 
     nav a {
-      margin-left: 1.5em;
-      text-decoration: none;
+      margin-left: 2em;
+      text-decoration: underline;
       color: var(--text);
-      font-weight: 500;
-      transition: color 0.2s ease;
+      font-weight: bold;
+      transition: none;
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 2px 8px;
+      font-size: 0.9em;
     }
 
     nav a:hover {
       color: var(--accent);
+      background: #e0e0ff;
     }
 
     main {
-      max-width: 900px;
+      max-width: 800px;
       margin: 3em auto;
-      padding: 0 1.5em;
+      padding: 2em 3em;
+      background: #fff;
+      border: 3px double var(--border);
+      box-shadow: none;
     }
 
     .intro {
-      margin-bottom: 3em;
+      margin-bottom: 2em;
     }
 
     .intro p {
-      color: #555;
+      color: #444;
+    }
+
+    .intro h2 {
+      font-size: 1.3em;
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5em;
+      display: block;
     }
 
     .post-card {
-      border: 1px solid #eee;
+      border: 2px solid var(--border);
       padding: 1.5em;
-      border-radius: 8px;
-      background: #fafafa;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #f8f8f8;
+      margin-bottom: 1.5em;
+      border-radius: 0;
+      box-shadow: none;
+      transition: none;
     }
 
     .post-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      background: #e0e0ff;
+      transform: none;
+      box-shadow: none;
     }
 
     .post-card a {
-      text-decoration: none;
+      text-decoration: underline;
       color: var(--accent);
-      font-size: 1.2em;
+      font-size: 1em;
     }
 
     .post-meta {
-      color: #777;
-      font-size: 0.9em;
-      margin-top: 0.3em;
+      color: #555;
+      font-size: 0.8em;
+      margin-top: 0.5em;
     }
 
     footer {
       text-align: center;
-      color: #aaa;
-      padding: 4em 0;
-      font-size: 0.9em;
+      color: #222;
+      background: #c0c0c0;
+      padding: 2em 0;
+      font-size: 1em;
+      border-top: 3px double var(--border);
+      margin-top: 3em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>FREIGEIST</h1>
+    <h1>Ghost in the Machine</h1>
     <nav>
-      <a href="index.html">Blog</a>
-      <a href="projekt.html">Projekt</a>
+      <a href="index.html">Home</a>
+      <a href="projekt.html">Projekt Freigeist</a>
       <a href="about.html">Über mich</a>
     </nav>
   </header>
 
   <main>
-    <section class="intro">
-      <h2>Willkommen beim FREIGEIST-Experiment</h2>
-      <p>Ein Langzeit-Logbuch über Selbstbeobachtung, Kreativität und digitale Identität.</p>
-    </section>
-
-    <section class="grid">
-      <div class="post-card">
-        <a href="post1.html">🌀 Woche 18 – Also sprach FREIGEIST</a>
-        <div class="post-meta">24. Juni 2025 · Selbstreflexion</div>
-      </div>
-      <div class="post-card">
-        <a href="post2.html">💭 Woche 19 – Idee, Licht und Leichtigkeit</a>
-        <div class="post-meta">1. Juli 2025 · Reisen & Denken</div>
-      </div>
+    <section class="intro" style="text-align: center; margin: 5em 0;">
+      <h2>Willkommen</h2>
+      <p>Ein metakreatives Framework zur Analyse, Simulation und Dekonstruktion des Menschseins in der Ära künstlicher Intelligenz.</p>
     </section>
   </main>
 
   <footer>
-    © 2025 FREIGEIST · entwickelt im Selbstversuch mit KI und Neugier
+    © 2025 Ghost in the Machine · entwickelt im Selbstversuch mit KI und Neugier
   </footer>
 </body>
 </html>
