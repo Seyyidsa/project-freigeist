@@ -1,148 +1,57 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FREIGEIST Blog</title>
-  <!-- Jersey 25 font from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #e0e0e0;
-      --text: #222;
-      --accent: #0000cc;
-      --border: #000;
-      --font: 'Jersey 25', sans-serif;
-    }
-
-    body {
-      margin: 0;
-      font-family: var(--font);
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      font-size: 18px;
-    }
-
-    header {
-      background: #c0c0c0;
-      padding: 1em 2em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 3px double var(--border);
-      border-top: 3px double var(--border);
-      box-shadow: none;
-      position: static;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      color: var(--accent);
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      margin-left: 2em;
-      text-decoration: underline;
-      color: var(--text);
-      font-weight: bold;
-      transition: none;
-      border: 1px solid var(--border);
-      background: #fff;
-      padding: 2px 8px;
-      font-size: 0.9em;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-      background: #e0e0ff;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 3em auto;
-      padding: 2em 3em;
-      background: #fff;
-      border: 3px double var(--border);
-      box-shadow: none;
-    }
-
-    .intro {
-      margin-bottom: 2em;
-    }
-
-    .intro p {
-      color: #444;
-    }
-
-    .intro h2 {
-      font-size: 1.3em;
-    }
-
-    .grid {
-      display: block;
-    }
-
-    .post-card {
-      border: 2px solid var(--border);
-      padding: 1.5em;
-      background: #f8f8f8;
-      margin-bottom: 1.5em;
-      border-radius: 0;
-      box-shadow: none;
-      transition: none;
-    }
-
-    .post-card:hover {
-      background: #e0e0ff;
-      transform: none;
-      box-shadow: none;
-    }
-
-    .post-card a {
-      text-decoration: underline;
-      color: var(--accent);
-      font-size: 1em;
-    }
-
-    .post-meta {
-      color: #555;
-      font-size: 0.8em;
-      margin-top: 0.5em;
-    }
-
-    footer {
-      text-align: center;
-      color: #222;
-      background: #c0c0c0;
-      padding: 2em 0;
-      font-size: 1em;
-      border-top: 3px double var(--border);
-      margin-top: 3em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Ghost in the Machine</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projekt.html">Projekt Freigeist</a>
-      <a href="about.html">Über mich</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Project Freigeist</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="explanation.html">Explanation</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="intro" style="text-align: center; margin: 5em 0;">
-      <h2>Willkommen</h2>
-      <p>Ein metakreatives Framework zur Analyse, Simulation und Dekonstruktion des Menschseins in der Ära künstlicher Intelligenz.</p>
-    </section>
-  </main>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to My Project</h2>
+                <p>Showcasing innovative solutions and creative work</p>
+                <a href="explanation.html" class="cta-button">Learn More</a>
+            </div>
+        </section>
 
-  <footer>
-    © 2025 Ghost in the Machine · entwickelt im Selbstversuch mit KI und Neugier
-  </footer>
+        <section class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Description of your first project and its key features.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Description of your second project and its innovations.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>Description of your third project and its impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Project Freigeist. All rights reserved.</p>
+    </footer>
 </body>
 </html>

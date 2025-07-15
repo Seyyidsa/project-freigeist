@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #333;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;
+    min-height: calc(100vh - 140px);
+}
+
+/* Hero Section */
+.hero {
+    background: #ffffff;
+    color: #333;
+    padding: 120px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: #666;
+    font-style: italic;
+}
+
+.cta-button {
+    display: inline-block;
+    background: transparent;
+    color: #333;
+    padding: 15px 40px;
+    text-decoration: none;
+    border: 2px solid #333;
+    font-weight: normal;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 3rem;
+    border: 1px solid #eee;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+
+/* Explanation Page */
+.explanation {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.explanation h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-left: 3px solid #333;
+}
+
+.content-section h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.content-section p {
+    color: #666;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.content-section ul {
+    color: #666;
+    margin-left: 2rem;
+}
+
+.content-section li {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Resources Page */
+.resources {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.resources h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.resource-section {
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-left: 3px solid #333;
+}
+
+.resource-section h3 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.resource-list {
+    list-style: none;
+}
+
+.resource-list li {
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+}
+
+.resource-list a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.resource-list a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #ffffff;
+    color: #666;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: auto;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .nav-links {
+        gap: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .content-section,
+    .resource-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .projects h2,
+    .explanation h2,
+    .resources h2 {
+        font-size: 2.2rem;
+    }
+    
+    .content-section,
+    .resource-section {
+        padding: 1.5rem;
+    }
+    
+    .project-card {
+        padding: 2rem;
+    }
+}
