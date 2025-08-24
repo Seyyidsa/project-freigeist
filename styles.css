@@ -258,6 +258,79 @@ main {
     text-decoration: underline;
 }
 
+/* Writing Page */
+.writing {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.writing h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.writing > .container > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+.post-section {
+    margin-bottom: 4rem;
+}
+
+.post-section h3 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: normal;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.post-list {
+    list-style: none;
+}
+
+.post-item {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-left: 3px solid #333;
+    transition: box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.post-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.post-item a:hover {
+    color: #666;
+}
+
+.post-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
 /* Footer */
 footer {
     background: #ffffff;
