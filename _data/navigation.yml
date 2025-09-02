@@ -1,0 +1,22 @@
+# Navigation data for both languages
+en:
+  main:
+    - title: "Home"
+      url: "/"
+    - title: "Explanation" 
+      url: "/explanation/"
+    - title: "Resources"
+      url: "/resources/"
+    - title: "Writing"
+      url: "/writing/"
+
+de:
+  main:
+    - title: "Home"
+      url: "/"
+    - title: "Projekt Freigeist"
+      url: "/projekt/"
+    - title: "Über mich"
+      url: "/about/"
+    - title: "Writing"
+      url: "/writing/"

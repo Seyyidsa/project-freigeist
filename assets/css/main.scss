@@ -1,0 +1,84 @@
+---
+---
+
+@import 'base';
+@import 'layout';
+@import 'components';
+
+// Additional Jekyll-specific styles
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #ffffff;
+}
+
+// German page styles
+[lang="de"] {
+  font-family: 'Jersey 25', sans-serif;
+  background-color: #e0e0e0;
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0 0 0;
+    text-align: left;
+    display: inline-block;
+    
+    li {
+      margin-bottom: 1.2em;
+    }
+    
+    a {
+      color: #0000cc;
+      text-decoration: underline;
+      font-weight: bold;
+      border: 1px solid #000;
+      background: #fff;
+      padding: 2px 8px;
+      font-size: 1em;
+      transition: none;
+      
+      &:hover {
+        background: #e0e0ff;
+      }
+    }
+  }
+}
+
+// Prose styles for blog posts
+.prose {
+  max-width: none;
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: normal;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  a {
+    color: #0d80f2;
+    text-decoration: underline;
+    
+    &:hover {
+      color: #0b6ec7;
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .px-40 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  [lang="de"] body {
+    padding: 1em 2em;
+    margin: 1em auto;
+  }
+}

@@ -1,0 +1,50 @@
+// Main layout structure
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    margin-top: 80px;
+    min-height: calc(100vh - 140px);
+}
+
+// English layout styles
+.layout-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f8fafc;
+}
+
+.layout-content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    flex: 1;
+}
+
+// German layout styles for retro look
+[lang="de"] {
+    body {
+        max-width: 800px;
+        margin: 3em auto;
+        padding: 2em 3em;
+        border: 3px double #000;
+        background-color: #e0e0e0;
+    }
+    
+    main {
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .overview {
+        margin: 3em 0 2em 0;
+    }
+}

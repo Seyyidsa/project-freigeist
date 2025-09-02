@@ -1,0 +1,28 @@
+# Site configuration data
+languages:
+  en:
+    name: "English"
+    code: "en"
+    title: "Project Freigeist"
+    description: "A metacreative experiment exploring the analysis, simulation, and deconstruction of humanity in the era of artificial intelligence."
+  de:
+    name: "Deutsch"  
+    code: "de"
+    title: "Projekt Freigeist"
+    description: "Ein metakreatives Experiment zur Analyse, Simulation und Dekonstruktion des Menschseins in der Ära künstlicher Intelligenz."
+
+social:
+  twitter: "#"
+  linkedin: "#"
+  github: "#"
+
+categories:
+  philosophy:
+    name: "Philosophy"
+    icon: "🌀"
+  creativity:
+    name: "Creativity"
+    icon: "💭"
+  weekly:
+    name: "Weekly Updates"
+    icon: "📅"

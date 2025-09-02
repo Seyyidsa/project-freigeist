@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% if page.lang == 'de' %}
+<article>
+    <header>
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        {% endif %}
+    </header>
+    
+    <div class="post-content">
+        {{ content }}
+    </div>
+    
+    {% if page.tags %}
+    <div class="post-tags">
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
+{% else %}
+<div class="px-40 flex flex-1 justify-center py-5">
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <article class="p-4">
+            <header class="mb-8">
+                <h1 class="text-[#0d141c] text-4xl font-black leading-tight tracking-[-0.033em] mb-4">{{ page.title }}</h1>
+                {% if page.date %}
+                <time class="text-[#49739c] text-sm font-normal" datetime="{{ page.date | date_to_xmlschema }}">
+                    {{ page.date | date: "%B %d, %Y" }}
+                </time>
+                {% endif %}
+                {% if page.category %}
+                <p class="text-[#49739c] text-sm font-normal leading-normal mt-2">{{ page.category }}</p>
+                {% endif %}
+            </header>
+            
+            {% if page.featured_image %}
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg mb-8"
+                 style='background-image: url("{{ page.featured_image }}");'></div>
+            {% endif %}
+            
+            <div class="post-content prose prose-lg max-w-none">
+                {{ content }}
+            </div>
+            
+            {% if page.tags %}
+            <div class="mt-8 pt-8 border-t border-[#e7edf4]">
+                <div class="flex gap-2 flex-wrap">
+                    {% for tag in page.tags %}
+                    <span class="bg-[#e7edf4] text-[#0d141c] px-3 py-1 rounded-full text-sm">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </article>
+    </div>
+</div>
+{% endif %}

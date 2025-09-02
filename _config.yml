@@ -1,0 +1,72 @@
+# Site settings
+title: Project Freigeist
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A metacreative experiment exploring the analysis, simulation, and deconstruction 
+  of humanity in the era of artificial intelligence. Discover innovative solutions 
+  and creative work.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - CLAUDE.md
+  - README.md
+  - CONTENT_GUIDE.md
+  - content/
+  - templates/
+
+# Collections
+collections:
+  posts:
+    output: true
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Project Freigeist"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Project Freigeist"
+
+# Sass
+sass:
+  style: compressed
+
+# Timezone
+timezone: Europe/Berlin
+
+# Language settings for dual language support
+languages: ["en", "de"]
+default_lang: "en"
+exclude_from_localizations: ["javascript", "images", "css", "assets"]
